@@ -19,8 +19,8 @@ const areas = [
 ---
 <BaseLayout {...page}>
   <h1>Locations</h1>
-  <p>We proudly serve the greater Omaha metro area. Same-day and emergency service available.</p>
-  <div class="grid" style="margin-top:16px;">
+  <p class="muted">We proudly serve the greater Omaha metro area. Same-day and emergency service available.</p>
+  <div class="grid">
     {areas.map((city) => (
       <div class="card"><strong>{city}</strong><br />Licensed & insured electricians</div>
     ))}

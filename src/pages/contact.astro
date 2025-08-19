@@ -7,15 +7,15 @@ const page = {
 ---
 <BaseLayout {...page}>
   <h1>Contact</h1>
-  <p>Call or text: <a href="tel:+14025551234">(402) 555-1234</a><br/>Email: <a href="mailto:hello@omahaelectrician.com">hello@omahaelectrician.com</a></p>
-  <form action="https://formspree.io/f/mayvlqzb" method="POST" class="card" style="margin-top:16px;">
+  <p class="muted">Call or text: <a href="tel:+14025551234">(402) 555-1234</a><br/>Email: <a href="mailto:hello@omahaelectrician.com">hello@omahaelectrician.com</a></p>
+  <form action="https://formspree.io/f/mayvlqzb" method="POST" class="card">
     <label>Name<br/><input name="name" required /></label><br/>
     <label>Email<br/><input type="email" name="email" required /></label><br/>
     <label>Phone<br/><input name="phone" /></label><br/>
     <label>How can we help?<br/><textarea name="message" rows="5" required></textarea></label><br/>
     <button class="cta" type="submit">Request Estimate</button>
   </form>
-  <p style="color:#475569; margin-top:8px;">Submitting shares your info for scheduling and service updates.</p>
+  <p class="muted">Submitting shares your info for scheduling and service updates.</p>
 </BaseLayout>
 
 
