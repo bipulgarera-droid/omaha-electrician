@@ -1,5 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import QuickQuoteForm from "../components/QuickQuoteForm.astro";
+import Testimonials from "../components/Testimonials.astro";
+
 const page = {
   title: 'Electrician Omaha NE | Licensed Emergency Electrical Services',
   description: 'Top-rated electrician in Omaha, NE. 24/7 emergency service, panel upgrades, EV charger installation, rewiring. Licensed & insured. Free estimates!'
@@ -105,6 +108,15 @@ const page = {
       </div>
     </div>
   </section>
+
+  <!-- Quick Quote Form -->
+  <QuickQuoteForm 
+    title="Get Your Free Electrical Quote Today" 
+    subtitle="Licensed Omaha electricians ready to solve your electrical problems"
+  />
+
+  <!-- Customer Testimonials -->
+  <Testimonials />
 </BaseLayout>
 
 

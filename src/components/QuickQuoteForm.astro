@@ -1,0 +1,174 @@
+---
+const { title = "Get Your Free Quote", subtitle = "Licensed electricians ready to help with your project" } = Astro.props;
+---
+
+<div class="quick-quote-form">
+  <div class="quote-header">
+    <h3>{title}</h3>
+    <p>{subtitle}</p>
+  </div>
+  
+  <form action="https://formspree.io/f/your-form-id" method="POST" class="quote-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email">
+    </div>
+    
+    <div class="form-group">
+      <label for="service">Service Needed *</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service...</option>
+        <option value="emergency">Emergency Electrical Service</option>
+        <option value="panel-upgrade">Electrical Panel Upgrade</option>
+        <option value="ev-charger">EV Charger Installation</option>
+        <option value="rewiring">Whole House Rewiring</option>
+        <option value="commercial">Commercial Electrical</option>
+        <option value="other">Other Electrical Service</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Project Details</label>
+      <textarea id="message" name="message" rows="3" placeholder="Tell us about your electrical project..."></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="address">Service Address</label>
+      <input type="text" id="address" name="address" placeholder="Omaha, NE">
+    </div>
+    
+    <button type="submit" class="quote-submit-btn">
+      📞 Get Free Quote - Call (402) 555-1234
+    </button>
+    
+    <div class="form-trust-signals">
+      <p>✅ Licensed & Insured &nbsp; ⚡ Same-Day Service &nbsp; 🛡️ 5-Year Warranty</p>
+    </div>
+  </form>
+</div>
+
+<style>
+  .quick-quote-form {
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border: 2px solid var(--brand-200);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .quote-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quote-header h3 {
+    color: var(--brand-700);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .quote-header p {
+    color: var(--muted);
+    margin: 0;
+  }
+  
+  .quote-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font: inherit;
+    color: var(--ink);
+    background: white;
+    transition: border-color 0.2s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--brand-400);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  .quote-submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--brand-600), var(--brand-700));
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .quote-submit-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  }
+  
+  .form-trust-signals {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .form-trust-signals p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+    
+    .quick-quote-form {
+      padding: 1.5rem;
+    }
+    
+    .quote-submit-btn {
+      font-size: 1rem;
+    }
+  }
+</style>
