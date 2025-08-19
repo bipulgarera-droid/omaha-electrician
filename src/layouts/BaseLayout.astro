@@ -1,0 +1,62 @@
+---
+const { title = 'Omaha Electrician | Reliable Electrical Services', description = 'Licensed Omaha electricians for residential and commercial projects. 24/7 emergency service, panel upgrades, EV chargers, lighting, inspections.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --brand:#0ea5e9; --ink:#0f172a; --muted:#475569; --bg:#ffffff; --card:#f8fafc; }
+      * { box-sizing: border-box; }
+      html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); }
+      a { color: var(--ink); text-decoration: none; }
+      header { position: sticky; top:0; background:#fff; border-bottom:1px solid #e2e8f0; z-index:10; }
+      .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+      .nav { display:flex; align-items:center; justify-content:space-between; height:64px; }
+      .brand { display:flex; gap:10px; align-items:center; font-weight:700; }
+      .logo { width:32px; height:32px; background: var(--brand); border-radius:8px; display:inline-block; }
+      .navlinks { display:flex; gap:18px; }
+      .cta { background: var(--brand); color:#fff; padding:10px 14px; border-radius:8px; font-weight:600; }
+      main { padding: 24px 0 64px; }
+      footer { border-top:1px solid #e2e8f0; padding:32px 0; color: var(--muted); }
+      .hero { display:grid; grid-template-columns:1.2fr 1fr; gap:24px; padding:28px 0; align-items:center; }
+      .hero h1 { font-size: clamp(28px, 4vw, 44px); line-height:1.05; margin: 0 0 12px; }
+      .hero p { font-size:18px; color: var(--muted); }
+      .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+      .card { background: var(--card); border:1px solid #e2e8f0; padding:16px; border-radius:12px; }
+      @media (max-width: 900px) { .hero { grid-template-columns:1fr; } .grid { grid-template-columns:1fr; } .navlinks { display:none; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="/">
+          <span class="logo"></span>
+          <span>Omaha Electrician</span>
+        </a>
+        <nav class="navlinks">
+          <a href="/services">Services</a>
+          <a href="/locations">Locations</a>
+          <a href="/about">About</a>
+          <a class="cta" href="/contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer>
+      <div class="container">
+        <div>© {new Date().getFullYear()} Omaha Electrician. Licensed & insured in Nebraska.</div>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+

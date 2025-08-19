@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const page = {
+  title: 'Electrician in Omaha, NE | Fast, Reliable, Local',
+  description: 'Trusted Omaha electricians for repairs, panel upgrades, EV charger installs, lighting, inspections, and 24/7 emergencies. Free estimates.'
+};
+---
+<BaseLayout {...page}>
+  <section class="hero">
+    <div>
+      <h1>Omaha’s Reliable Electricians</h1>
+      <p>Residential and commercial electrical services across the Omaha metro. Same-day scheduling and 24/7 emergency support.</p>
+      <p><a class="cta" href="/contact">Get a Free Estimate</a></p>
+      <div class="grid" style="margin-top:16px;">
+        <div class="card"><strong>24/7 Emergency</strong><br />On-call licensed electricians</div>
+        <div class="card"><strong>Upfront Pricing</strong><br />No surprise fees</div>
+        <div class="card"><strong>5-Star Rated</strong><br />Local, trusted, insured</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Popular Services</h3>
+      <ul>
+        <li>Electrical troubleshooting & repairs</li>
+        <li>Panel upgrades & circuit additions</li>
+        <li>EV charger installation</li>
+        <li>Indoor/outdoor lighting</li>
+        <li>Whole-home surge protection</li>
+        <li>Commercial tenant improvements</li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+

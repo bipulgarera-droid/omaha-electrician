@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const page = {
+  title: 'Service Areas | Electrician in Omaha Metro',
+  description: 'We serve Omaha, Bellevue, Papillion, La Vista, Ralston, Elkhorn, Bennington, Gretna, Millard, and Council Bluffs.'
+};
+const areas = [
+  'Omaha',
+  'Bellevue',
+  'Papillion',
+  'La Vista',
+  'Ralston',
+  'Elkhorn',
+  'Bennington',
+  'Gretna',
+  'Millard',
+  'Council Bluffs'
+];
+---
+<BaseLayout {...page}>
+  <h1>Locations</h1>
+  <p>We proudly serve the greater Omaha metro area. Same-day and emergency service available.</p>
+  <div class="grid" style="margin-top:16px;">
+    {areas.map((city) => (
+      <div class="card"><strong>{city}</strong><br />Licensed & insured electricians</div>
+    ))}
+  </div>
+</BaseLayout>
+
+

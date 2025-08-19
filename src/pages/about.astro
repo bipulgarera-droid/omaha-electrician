@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const page = {
+  title: 'About Our Omaha Electricians',
+  description: 'Local team of licensed electricians serving Omaha homes and businesses with safety-first workmanship and honest pricing.'
+};
+---
+<BaseLayout {...page}>
+  <h1>About Us</h1>
+  <p>We are a local Omaha electrical contractor committed to safety, craftsmanship, and clear communication. Our licensed team brings years of residential and commercial experience—from small repairs to complex projects.</p>
+  <div class="grid" style="margin-top:16px;">
+    <div class="card"><strong>Licensed & Insured</strong><br />Nebraska Electrical Contractor</div>
+    <div class="card"><strong>Safety-First</strong><br />Code-compliant methods and QA checks</div>
+    <div class="card"><strong>Transparent Pricing</strong><br />Upfront quotes and options</div>
+  </div>
+  <h3 style="margin-top:24px;">Our Promise</h3>
+  <ul>
+    <li>Respect your home or job site</li>
+    <li>Communicate clearly and arrive on time</li>
+    <li>Stand behind our work with a workmanship guarantee</li>
+  </ul>
+</BaseLayout>
+
+

@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const page = {
+  title: 'Electrical Services in Omaha | Residential & Commercial',
+  description: 'Full-service electricians in Omaha: repairs, panel upgrades, EV chargers, lighting, surge protection, code corrections, and more.'
+};
+---
+<BaseLayout {...page}>
+  <h1>Services</h1>
+  <div class="grid" style="margin-top:16px;">
+    <div class="card">
+      <h3>Repairs & Troubleshooting</h3>
+      <p>Fast diagnostics for breakers, outlets, switches, and wiring faults. Safe, code-compliant fixes.</p>
+    </div>
+    <div class="card">
+      <h3>Panel Upgrades</h3>
+      <p>Increase capacity, eliminate hazards, and prepare for additions like EV chargers or remodels.</p>
+    </div>
+    <div class="card">
+      <h3>EV Charger Install</h3>
+      <p>Level 2 chargers for homes and businesses, dedicated circuits, permits, and testing.</p>
+    </div>
+    <div class="card">
+      <h3>Lighting & Controls</h3>
+      <p>Recessed lighting, exterior/security, smart dimmers, timers, and energy-efficient retrofits.</p>
+    </div>
+    <div class="card">
+      <h3>Surge Protection</h3>
+      <p>Whole-home protection to safeguard appliances and electronics from grid spikes and storms.</p>
+    </div>
+    <div class="card">
+      <h3>Commercial Electrical</h3>
+      <p>Tenant improvements, occupancy sensors, circuits, emergency lighting, and maintenance.</p>
+    </div>
+  </div>
+</BaseLayout>
+
+
