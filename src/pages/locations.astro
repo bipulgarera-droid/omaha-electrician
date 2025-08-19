@@ -1,30 +1,125 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const page = {
-  title: 'Service Areas | Electrician in Omaha Metro',
-  description: 'We serve Omaha, Bellevue, Papillion, La Vista, Ralston, Elkhorn, Bennington, Gretna, Millard, and Council Bluffs.'
+  title: 'Electrician Service Areas Omaha NE | Licensed Local Electricians',
+  description: 'Licensed electricians serving Omaha, Bellevue, Papillion, West Omaha, Elkhorn, Millard, La Vista. Same day emergency electrical service available!'
 };
-const areas = [
-  'Omaha',
-  'Bellevue',
-  'Papillion',
-  'La Vista',
-  'Ralston',
-  'Elkhorn',
-  'Bennington',
-  'Gretna',
-  'Millard',
-  'Council Bluffs'
-];
 ---
 <BaseLayout {...page}>
-  <h1>Locations</h1>
-  <p class="muted">We proudly serve the greater Omaha metro area. Same-day and emergency service available.</p>
+  <h1>Electrician Service Areas Omaha NE</h1>
+  <p class="muted">Licensed electrical contractors serving the greater Omaha metro area. Same-day and emergency electrical service available throughout Nebraska and Iowa.</p>
+  
+  <h2>Primary Service Areas</h2>
   <div class="grid">
-    {areas.map((city) => (
-      <div class="card"><strong>{city}</strong><br />Licensed & insured electricians</div>
-    ))}
+    <div class="card">
+      <h3><a href="/electrician-west-omaha">West Omaha Electrician</a></h3>
+      <p>Professional electrical services in West Omaha, Millard, Elkhorn, and surrounding areas. Emergency electrician available 24/7.</p>
+      <p><strong>Areas:</strong> Millard, Elkhorn, Benson, Regency, Countryside</p>
+    </div>
+    <div class="card">
+      <h3>Bellevue Electrician</h3>
+      <p>Licensed electrician in Bellevue NE providing emergency service, panel upgrades, and complete electrical services.</p>
+      <p><strong>Zip Codes:</strong> 68005, 68123, 68147</p>
+    </div>
+    <div class="card">
+      <h3>Papillion Electrician</h3>
+      <p>Electrical contractors serving Papillion with same day service for residential and commercial electrical needs.</p>
+      <p><strong>Zip Codes:</strong> 68046, 68133, 68157</p>
+    </div>
+    <div class="card">
+      <h3>La Vista Electrician</h3>
+      <p>Professional electricians in La Vista NE offering panel upgrades, rewiring, and emergency electrical service.</p>
+      <p><strong>Zip Code:</strong> 68128</p>
+    </div>
+    <div class="card">
+      <h3>Gretna Electrician</h3>
+      <p>Licensed electrical contractors in Gretna providing EV charger installation, generator hookups, and electrical repairs.</p>
+      <p><strong>Zip Code:</strong> 68028</p>
+    </div>
+    <div class="card">
+      <h3>Ralston Electrician</h3>
+      <p>Emergency electrician service in Ralston NE with same day availability for urgent electrical problems.</p>
+      <p><strong>Zip Code:</strong> 68127</p>
+    </div>
   </div>
+
+  <section class="section alt">
+    <div class="container">
+      <h2>Extended Service Areas</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Douglas County</h3>
+          <p><strong>Cities:</strong> Omaha, Elkhorn, Valley, Waterloo, Bennington, Boys Town</p>
+          <p>Complete electrical services throughout Douglas County including emergency repairs and panel upgrades.</p>
+        </div>
+        <div class="card">
+          <h3>Sarpy County</h3>
+          <p><strong>Cities:</strong> Bellevue, Papillion, La Vista, Ralston, Gretna, Springfield</p>
+          <p>Licensed electricians serving all of Sarpy County with residential and commercial electrical services.</p>
+        </div>
+        <div class="card">
+          <h3>Washington County</h3>
+          <p><strong>Cities:</strong> Blair, Kennard, Arlington, Fort Calhoun</p>
+          <p>Electrical contractors providing service throughout Washington County including emergency calls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Omaha Neighborhood Electrical Service</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Central Omaha</h3>
+          <ul>
+            <li>Downtown Omaha - commercial electrical</li>
+            <li>Midtown - residential electrical service</li>
+            <li>Blackstone District - emergency service</li>
+            <li>Benson - old house rewiring</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>North Omaha</h3>
+          <ul>
+            <li>Florence - electrical panel upgrades</li>
+            <li>Saratoga - emergency electrical service</li>
+            <li>Miller Park - residential electrical</li>
+            <li>Kountze Place - electrical repairs</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>South Omaha</h3>
+          <ul>
+            <li>Little Italy - electrical troubleshooting</li>
+            <li>Vinton Street - commercial electrical</li>
+            <li>Stockyards - industrial electrical</li>
+            <li>Hanscom Park - residential service</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <h2>Why Choose Local Omaha Electricians?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Fast Response Times</h3>
+          <p>Being local means faster response times for emergency electrical service throughout the Omaha metro area.</p>
+        </div>
+        <div class="card">
+          <h3>Local Code Knowledge</h3>
+          <p>We understand local electrical codes and permit requirements for Omaha, Bellevue, Papillion, and surrounding cities.</p>
+        </div>
+        <div class="card">
+          <h3>Community Focused</h3>
+          <p>As local electricians, we're invested in providing quality electrical service to our Omaha neighbors and community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
 
 

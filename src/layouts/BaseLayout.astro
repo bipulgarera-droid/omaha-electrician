@@ -28,7 +28,79 @@ const { title = 'Omaha Electrician | Reliable Electrical Services', description 
       .hero .lede { font-size:18px; color:var(--muted); margin:0 0 18px; }
       @media (max-width:1000px){ .hero{ grid-template-columns:1fr; } .navlinks{ display:none; } }
     </style>
-    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://omaha-electrician.vercel.app/#business",
+      "name": "Omaha Electrician",
+      "alternateName": "Licensed Electrician Omaha NE",
+      "description": "Licensed electrical contractors providing 24/7 emergency service, panel upgrades, EV charger installation, and complete electrical services in Omaha, NE.",
+      "url": "https://omaha-electrician.vercel.app/",
+      "telephone": "+1-402-555-1234",
+      "email": "hello@omahaelectrician.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Omaha",
+        "addressRegion": "NE",
+        "postalCode": "68102",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.2565,
+        "longitude": -95.9345
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Omaha", "addressRegion": "NE"},
+        {"@type": "City", "name": "Bellevue", "addressRegion": "NE"},
+        {"@type": "City", "name": "Papillion", "addressRegion": "NE"},
+        {"@type": "City", "name": "La Vista", "addressRegion": "NE"},
+        {"@type": "City", "name": "Elkhorn", "addressRegion": "NE"},
+        {"@type": "City", "name": "Millard", "addressRegion": "NE"},
+        {"@type": "City", "name": "Gretna", "addressRegion": "NE"}
+      ],
+      "openingHours": ["Mo-Fr 07:00-18:00", "Sa 08:00-16:00"],
+      "serviceType": "Electrical Services",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Electrical Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Electrical Service",
+              "description": "24/7 emergency electrician service for power outages and urgent repairs"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electrical Panel Upgrade",
+              "description": "200 amp electrical panel installation and upgrades"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "EV Charger Installation",
+              "description": "Tesla Wall Connector and Level 2 EV charging station installation"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      }
+    }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -39,6 +111,7 @@ const { title = 'Omaha Electrician | Reliable Electrical Services', description 
         </a>
         <nav class="navlinks">
           <a href="/services">Services</a>
+          <a href="/emergency-electrician">Emergency</a>
           <a href="/locations">Locations</a>
           <a href="/about">About</a>
           <a class="cta" href="/contact">Contact</a>
