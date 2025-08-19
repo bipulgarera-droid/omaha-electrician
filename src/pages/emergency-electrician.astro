@@ -1,147 +1,481 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-const page = {
-  title: 'Emergency Electrician Omaha NE | 24 Hour Electrical Service',
-  description: '24/7 emergency electrician in Omaha NE. Same day service for power outages, sparking outlets, electrical fires. Licensed electrician available now!'
-};
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout {...page}>
-  <section class="hero">
-    <div>
-      <h1>Emergency Electrician Omaha NE | Available 24/7</h1>
-      <p class="lede">Electrical emergency? Our licensed electricians are available now for same-day service in Omaha, Bellevue, Papillion, and surrounding areas. No overtime charges for emergency calls.</p>
-      <p>
-        <a class="cta" href="tel:+14025551234">Call Now: (402) 555-1234</a>
-        &nbsp;&nbsp;
-        <a class="button outline" href="/contact">Request Emergency Service</a>
-      </p>
-      <div class="features">
-        <div class="card"><strong>Available Now</strong><br />Licensed electrician on call</div>
-        <div class="card"><strong>Same Day Response</strong><br />Emergency service guaranteed</div>
-        <div class="card"><strong>No Overtime Fees</strong><br />Fair pricing 24/7</div>
+
+<BaseLayout 
+  title="Emergency Electrician Omaha | 24/7 Electrical Repair Service NE"
+  description="24/7 emergency electrician in Omaha, NE. Fast response for power outages, electrical fires, sparking outlets, and urgent electrical repairs. Licensed electricians available now."
+  canonical="https://omaha-electrician.vercel.app/emergency-electrician"
+>
+  <main class="container">
+    <div class="hero">
+      <div>
+        <h1>Emergency Electrician Omaha</h1>
+        <p class="lede">24/7 emergency electrical services throughout Omaha and surrounding areas. When electrical problems can't wait, our licensed electricians respond fast to keep your family and property safe.</p>
+        <div class="emergency-cta">
+          <a href="tel:+1-402-555-1234" class="btn-emergency">🚨 Call Now: (402) 555-1234</a>
+          <p class="response-time">⚡ Average Response Time: 30 Minutes</p>
+        </div>
+        <div class="trust-indicators">
+          <span>✅ Licensed Master Electricians</span>
+          <span>🚗 Fully Stocked Emergency Trucks</span>
+          <span>🛡️ Insured & Bonded</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/images/emergency-electrician-omaha.webp" alt="Emergency electrician responding to electrical emergency in Omaha" loading="eager" width="500" height="400">
       </div>
     </div>
-    <div class="card">
-      <h3>⚡ Electrical Emergencies We Handle</h3>
-      <ul>
-        <li><strong>Power outages</strong> - partial or complete electrical failure</li>
-        <li><strong>Sparking outlets</strong> - dangerous electrical arcing</li>
-        <li><strong>Burning smell</strong> - electrical fire prevention</li>
-        <li><strong>Circuit breaker problems</strong> - won't reset, keeps tripping</li>
-        <li><strong>Hot outlets/switches</strong> - overheating electrical components</li>
-        <li><strong>Flickering lights</strong> - wiring issues throughout home</li>
-        <li><strong>Electrical shock</strong> - dangerous wiring conditions</li>
-        <li><strong>Storm damage</strong> - electrical system repairs</li>
-      </ul>
-    </div>
-  </section>
 
-  <section class="section alt">
-    <div class="container">
-      <h2>When to Call an Emergency Electrician</h2>
+    <section class="what-included">
+      <h2>What's Included in Our Emergency Service</h2>
       <div class="grid">
         <div class="card">
-          <h3>🔥 Immediate Danger</h3>
+          <h3>Immediate Response</h3>
           <ul>
-            <li>Burning smell from outlets or panel</li>
-            <li>Sparks from electrical components</li>
-            <li>Electrical shock from appliances</li>
-            <li>Smoke from wiring or outlets</li>
+            <li>24/7/365 availability</li>
+            <li>Real electricians answer phones</li>
+            <li>30-minute average response time</li>
+            <li>Fully stocked emergency vehicles</li>
+            <li>No appointment needed</li>
           </ul>
-          <p><strong>Call immediately: (402) 555-1234</strong></p>
         </div>
         <div class="card">
-          <h3>⚡ Power Issues</h3>
+          <h3>Safety Assessment</h3>
           <ul>
-            <li>Complete power outage in home</li>
-            <li>Partial power loss affecting multiple rooms</li>
-            <li>Circuit breakers that won't stay on</li>
-            <li>Electrical panel making buzzing sounds</li>
+            <li>Complete electrical system evaluation</li>
+            <li>Immediate hazard identification</li>
+            <li>Power shutoff if necessary</li>
+            <li>Safety protocol implementation</li>
+            <li>Risk mitigation strategies</li>
           </ul>
-          <p><strong>Same day service available</strong></p>
         </div>
         <div class="card">
-          <h3>🏠 Safety Concerns</h3>
+          <h3>Emergency Repairs</h3>
           <ul>
-            <li>Hot electrical outlets or switches</li>
-            <li>Lights dimming when appliances start</li>
-            <li>Frequent blown fuses or tripped breakers</li>
-            <li>Old wiring showing signs of failure</li>
+            <li>Temporary power restoration</li>
+            <li>Permanent repair solutions</li>
+            <li>Code-compliant installations</li>
+            <li>Quality parts and materials</li>
+            <li>Clean-up and testing</li>
           </ul>
-          <p><strong>Schedule urgent inspection</strong></p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <h2>24 Hour Emergency Electrical Service Areas</h2>
-      <p>Our emergency electricians provide same-day service throughout the Omaha metro area:</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Central Omaha</h3>
-          <p>Downtown, Midtown, Benson, Florence</p>
+    <section class="emergency-problems">
+      <h2>Emergency Electrical Problems We Solve</h2>
+      <div class="problem-grid">
+        <div class="emergency-problem">
+          <h3>🔥 Electrical Fires & Sparking</h3>
+          <p><strong>Signs:</strong> Sparks from outlets, panels, or switches; burning electrical smell; visible flames</p>
+          <p><strong>Our Response:</strong> Immediate power shutoff, fire suppression coordination, cause identification, and permanent repair</p>
+          <p><strong>Danger Level:</strong> <span class="danger-critical">CRITICAL - Call 911 first, then us</span></p>
         </div>
-        <div class="card">
-          <h3>West Omaha</h3>
-          <p>Millard, Elkhorn, West Dodge area</p>
-        </div>
-        <div class="card">
-          <h3>South Metro</h3>
-          <p>Bellevue, Papillion, La Vista, Ralston</p>
-        </div>
-        <div class="card">
-          <h3>North Metro</h3>
-          <p>Blair, Bennington, Boys Town</p>
-        </div>
-        <div class="card">
-          <h3>East Omaha</h3>
-          <p>Council Bluffs, Carter Lake</p>
-        </div>
-        <div class="card">
-          <h3>Southwest</h3>
-          <p>Gretna, Springfield, Chalco</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section alt">
-    <div class="container">
-      <h2>Emergency Electrical Safety Tips</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Before We Arrive</h3>
-          <ul>
-            <li>Turn off power at the main breaker if safe to do so</li>
-            <li>Unplug appliances from affected circuits</li>
-            <li>Keep family and pets away from electrical hazards</li>
-            <li>Do not touch exposed wires or wet electrical components</li>
-            <li>Use flashlights, not candles, for lighting</li>
-          </ul>
+        <div class="emergency-problem">
+          <h3>⚡ Complete Power Outages</h3>
+          <p><strong>Signs:</strong> Entire home without power when neighbors have power; tripped main breaker won't reset</p>
+          <p><strong>Our Response:</strong> Service entrance inspection, main panel diagnosis, utility coordination if needed</p>
+          <p><strong>Danger Level:</strong> <span class="danger-high">HIGH - Can indicate serious electrical issues</span></p>
         </div>
-        <div class="card">
-          <h3>What NOT to Do</h3>
-          <ul>
-            <li>Don't attempt electrical repairs yourself</li>
-            <li>Don't use water near electrical problems</li>
-            <li>Don't ignore burning smells or sparks</li>
-            <li>Don't reset breakers repeatedly</li>
-            <li>Don't use damaged electrical cords</li>
-          </ul>
+
+        <div class="emergency-problem">
+          <h3>💡 Partial Power Loss</h3>
+          <p><strong>Signs:</strong> Half your home without power; some outlets work, others don't; lights dim randomly</p>
+          <p><strong>Our Response:</strong> Circuit identification, load balancing, neutral wire inspection, immediate restoration</p>
+          <p><strong>Danger Level:</strong> <span class="danger-medium">MEDIUM - Can worsen quickly</span></p>
         </div>
-        <div class="card">
-          <h3>Call 911 If:</h3>
-          <ul>
-            <li>There's an active electrical fire</li>
-            <li>Someone has been electrocuted</li>
-            <li>Power lines are down on your property</li>
-            <li>You smell gas along with electrical problems</li>
-          </ul>
-          <p><strong>Then call us for electrical repairs</strong></p>
+
+        <div class="emergency-problem">
+          <h3>🔌 Electrical Shocks</h3>
+          <p><strong>Signs:</strong> Getting shocked by appliances, outlets, or switches; tingling sensations</p>
+          <p><strong>Our Response:</strong> GFCI testing, grounding system inspection, immediate safety measures</p>
+          <p><strong>Danger Level:</strong> <span class="danger-critical">CRITICAL - Risk of electrocution</span></p>
+        </div>
+
+        <div class="emergency-problem">
+          <h3>🌡️ Hot Outlets & Switches</h3>
+          <p><strong>Signs:</strong> Outlets, switches, or cover plates hot to touch; melted plastic around electrical components</p>
+          <p><strong>Our Response:</strong> Immediate power disconnection, wiring inspection, component replacement</p>
+          <p><strong>Danger Level:</strong> <span class="danger-high">HIGH - Fire risk</span></p>
+        </div>
+
+        <div class="emergency-problem">
+          <h3>🔊 Electrical Buzzing/Crackling</h3>
+          <p><strong>Signs:</strong> Buzzing from panel, outlets, or switches; crackling sounds when using electrical devices</p>
+          <p><strong>Our Response:</strong> Immediate inspection, loose connection repair, component replacement</p>
+          <p><strong>Danger Level:</strong> <span class="danger-high">HIGH - Often precedes fires</span></p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="emergency-process">
+      <h2>Our Emergency Response Process</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number emergency">1</div>
+          <div class="step-content">
+            <h3>Immediate Phone Assessment (2 minutes)</h3>
+            <p>Our licensed electrician asks key safety questions, provides immediate safety instructions if needed, and dispatches the nearest emergency truck to your location.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number emergency">2</div>
+          <div class="step-content">
+            <h3>Rapid On-Site Response (30 minutes average)</h3>
+            <p>Fully equipped emergency vehicle arrives with master electrician, safety equipment, and most common repair parts to resolve your emergency quickly.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number emergency">3</div>
+          <div class="step-content">
+            <h3>Safety Assessment & Stabilization (15 minutes)</h3>
+            <p>Immediate safety evaluation, power isolation if necessary, hazard mitigation, and explanation of the situation and required repairs.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number emergency">4</div>
+          <div class="step-content">
+            <h3>Emergency Repair & Restoration (Variable)</h3>
+            <p>Permanent repair using quality materials, system testing, safety verification, and full power restoration with warranty coverage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-emergency">
+      <h2>Why Choose Our Emergency Electrical Service</h2>
+      <div class="grid">
+        <div class="benefit">
+          <h3>⚡ True 24/7 Availability</h3>
+          <p>Real licensed electricians answer our phones 24/7/365. No answering services, no callbacks during emergencies - immediate response when you need it most.</p>
+        </div>
+        <div class="benefit">
+          <h3>🚗 30-Minute Average Response</h3>
+          <p>We maintain strategically located emergency vehicles throughout Omaha metro. Our trucks are fully stocked with common repair parts for immediate fixes.</p>
+        </div>
+        <div class="benefit">
+          <h3>🛡️ Master Electrician Response</h3>
+          <p>Every emergency call is handled by a Nebraska licensed master electrician with extensive training in emergency procedures and safety protocols.</p>
+        </div>
+        <div class="benefit">
+          <h3>💰 Transparent Emergency Pricing</h3>
+          <p>Clear emergency rates disclosed upfront. No surprise charges or hidden fees during your crisis. You approve all work before we begin.</p>
+        </div>
+        <div class="benefit">
+          <h3>🔧 Permanent Solutions</h3>
+          <p>We don't just patch problems - we provide permanent, code-compliant repairs that prevent future emergencies. All work includes warranty coverage.</p>
+        </div>
+        <div class="benefit">
+          <h3>📞 Direct Communication</h3>
+          <p>Direct phone line to our emergency dispatcher. No phone trees, no hold times during emergencies. Immediate connection to help.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="coverage-area">
+      <h2>24/7 Emergency Coverage Area</h2>
+      <div class="coverage-grid">
+        <div class="coverage-zone">
+          <h3>🟢 Priority Response Zone (15-30 minutes)</h3>
+          <ul>
+            <li>Downtown Omaha (68102, 68105)</li>
+            <li>Midtown Omaha (68131, 68132)</li>
+            <li>Benson/Florence (68111, 68112)</li>
+            <li>South Omaha (68107, 68108)</li>
+          </ul>
+        </div>
+        <div class="coverage-zone">
+          <h3>🟡 Standard Response Zone (30-45 minutes)</h3>
+          <ul>
+            <li>West Omaha (68118, 68130, 68154)</li>
+            <li>Bellevue (68005, 68123)</li>
+            <li>Papillion (68046, 68133)</li>
+            <li>La Vista (68128)</li>
+          </ul>
+        </div>
+        <div class="coverage-zone">
+          <h3>🟠 Extended Response Zone (45-60 minutes)</h3>
+          <ul>
+            <li>Elkhorn (68022)</li>
+            <li>Gretna (68028)</li>
+            <li>Millard (68157)</li>
+            <li>Ralston (68127)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="emergency-faq">
+      <h2>Emergency Electrical Service FAQs</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What constitutes an electrical emergency?</h3>
+          <p>Any electrical situation that poses immediate danger: sparking, electrical fires, complete power loss, electrical shocks, burning smells, or hot electrical components. When in doubt, call - we'd rather assess a non-emergency than miss a dangerous situation.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How much do emergency electrical services cost?</h3>
+          <p>Emergency service calls start at $150 for the response and first hour, with additional work priced at our emergency hourly rate. We provide upfront pricing before beginning any repairs - no surprises during your emergency.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you really respond 24/7 on weekends and holidays?</h3>
+          <p>Yes, absolutely. Electrical emergencies don't follow business hours. We maintain full emergency response capability 24/7/365, including Christmas, New Year's, and severe weather conditions.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What should I do while waiting for the emergency electrician?</h3>
+          <p>Stay away from the problem area, turn off power at the main breaker if safe to do so, evacuate if there's fire or strong electrical burning smell, and call 911 if there's immediate danger. Our dispatcher will provide specific safety instructions.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can you handle commercial electrical emergencies?</h3>
+          <p>Yes, we provide 24/7 emergency service for commercial properties including offices, retail stores, restaurants, and industrial facilities. We understand the critical nature of business electrical systems.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do emergency repairs come with warranties?</h3>
+          <p>All emergency repairs include our standard warranty coverage. We stand behind our work even during emergency situations and will return to address any issues with our repairs at no charge.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="emergency-banner">
+        <h2>🚨 Don't Wait - Electrical Emergencies Can Be Life-Threatening</h2>
+        <p>Every minute counts during an electrical emergency. Our licensed master electricians are standing by 24/7 to respond immediately and keep your family and property safe.</p>
+        <a href="tel:+1-402-555-1234" class="btn-emergency-large">Emergency Service: (402) 555-1234</a>
+        <p class="guarantee">⚡ 30-Minute Average Response Time Guaranteed</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Emergency Service Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EmergencyService",
+    "name": "24/7 Emergency Electrician Omaha",
+    "description": "Emergency electrical services available 24/7 in Omaha, NE for electrical fires, power outages, and urgent electrical repairs",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Omaha Electrician",
+      "telephone": "+1-402-555-1234",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Omaha",
+        "addressRegion": "NE",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Omaha", "addressRegion": "NE"},
+      {"@type": "City", "name": "Bellevue", "addressRegion": "NE"},
+      {"@type": "City", "name": "Papillion", "addressRegion": "NE"}
+    ],
+    "availableLanguage": "English",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "offers": {
+      "@type": "Offer",
+      "description": "24/7 emergency electrical repair services",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
 </BaseLayout>
+
+<style>
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  .trust-indicators {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+
+  .emergency-cta {
+    margin: 2rem 0;
+  }
+
+  .btn-emergency, .btn-emergency-large {
+    background: #dc2626;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+    border: 2px solid #dc2626;
+  }
+
+  .btn-emergency:hover, .btn-emergency-large:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+  }
+
+  .btn-emergency-large {
+    font-size: 1.4rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .response-time {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--brand);
+  }
+
+  .what-included, .emergency-problems, .emergency-process, .why-choose-emergency, .coverage-area, .emergency-faq {
+    margin: 4rem 0;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .emergency-problem {
+    background: #fee2e2;
+    border: 2px solid #dc2626;
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .danger-critical {
+    background: #dc2626;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .danger-high {
+    background: #f59e0b;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .danger-medium {
+    background: #10b981;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .step-number {
+    background: var(--brand);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .step-number.emergency {
+    background: #dc2626;
+  }
+
+  .benefit {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .coverage-zone {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .faq-item {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .faq-item h3 {
+    color: var(--brand);
+    margin-bottom: 1rem;
+  }
+
+  .emergency-banner {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  .guarantee {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .trust-indicators {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .problem-grid, .faq-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .step {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .coverage-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

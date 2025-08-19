@@ -1,174 +1,590 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-const page = {
-  title: 'EV Charger Installation Omaha | Tesla Charger Installer NE',
-  description: 'Professional EV charger installation in Omaha NE. Tesla Wall Connector, Level 2 charging stations. Licensed electrician, permits included. Free quotes!'
-};
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout {...page}>
-  <section class="hero">
-    <div>
-      <h1>EV Charger Installation Omaha NE | Tesla Charger Installer</h1>
-      <p class="lede">Professional electric vehicle charger installation in Omaha, Bellevue, and Papillion. We install Tesla Wall Connectors, Level 2 charging stations, and commercial EV charging systems. Licensed electrician with permits included.</p>
-      <p>
-        <a class="cta" href="/contact">Get Free Quote</a>
-        &nbsp;&nbsp;
-        <a class="button outline" href="tel:+14025551234">Call: (402) 555-1234</a>
-      </p>
-      <div class="features">
-        <div class="card"><strong>Tesla Certified</strong><br />Authorized Wall Connector installer</div>
-        <div class="card"><strong>Permits Included</strong><br />Full electrical permits & inspection</div>
-        <div class="card"><strong>Same Week Install</strong><br />Fast scheduling available</div>
-      </div>
-    </div>
-    <div class="card">
-      <h3>🚗 EV Chargers We Install</h3>
-      <ul>
-        <li><strong>Tesla Wall Connector</strong> - up to 48A, WiFi enabled</li>
-        <li><strong>ChargePoint Home Flex</strong> - universal Level 2 charger</li>
-        <li><strong>JuiceBox 40</strong> - smart charging with app control</li>
-        <li><strong>Grizzl-E</strong> - weather-resistant outdoor charger</li>
-        <li><strong>ClipperCreek</strong> - commercial grade reliability</li>
-        <li><strong>NEMA 14-50 outlets</strong> - for portable chargers</li>
-      </ul>
-      <p><strong>All installations include electrical permits and city inspection</strong></p>
-    </div>
-  </section>
 
-  <section class="section alt">
-    <div class="container">
-      <h2>EV Charger Installation Process</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>1. Site Assessment</h3>
-          <p>Our electrician evaluates your electrical panel capacity, determines the best charger location, and calculates installation requirements. Free on-site consultation.</p>
+<BaseLayout 
+  title="EV Charger Installation Omaha | Tesla Charger Installer NE"
+  description="Professional EV charger installation in Omaha, NE. Tesla Wall Connector, Level 2 charging stations, commercial EV charging systems. Licensed electrician, permits included, same-week installation."
+  canonical="https://omaha-electrician.vercel.app/ev-charger-installation"
+>
+  <main class="container">
+    <div class="hero">
+      <div>
+        <h1>EV Charger Installation Omaha</h1>
+        <p class="lede">Professional electric vehicle charger installation throughout Omaha and surrounding areas. Tesla Wall Connectors, Level 2 charging stations, and commercial EV charging systems installed by licensed electricians with permits included.</p>
+        <div class="cta-group">
+          <a href="/contact" class="btn-primary">Get Free Estimate</a>
+          <a href="tel:+1-402-555-1234" class="btn-secondary">Call (402) 555-1234</a>
         </div>
-        <div class="card">
-          <h3>2. Electrical Upgrade</h3>
-          <p>If needed, we upgrade your electrical panel to handle the additional load. Most EV chargers require a dedicated 240V circuit with appropriate amperage.</p>
-        </div>
-        <div class="card">
-          <h3>3. Professional Installation</h3>
-          <p>Licensed electrician installs the charging station, runs new wiring, and ensures code compliance. All work includes electrical permits and inspection.</p>
+        <div class="trust-indicators">
+          <span>✅ Tesla Certified Installer</span>
+          <span>⚡ Same-Week Installation</span>
+          <span>📋 Permits Included</span>
         </div>
       </div>
+      <div class="hero-image">
+        <img src="/images/ev-charger-installation-omaha.webp" alt="Professional EV charger installation in Omaha home garage" loading="eager" width="500" height="400">
+      </div>
     </div>
-  </section>
 
-  <section class="section">
-    <div class="container">
-      <h2>Tesla Charger Installation Omaha</h2>
+    <section class="what-included">
+      <h2>What's Included in Our EV Charger Installation</h2>
       <div class="grid">
         <div class="card">
-          <h3>Tesla Wall Connector Features</h3>
+          <h3>Complete Site Assessment</h3>
           <ul>
-            <li>Up to 48 amp charging (44 miles/hour)</li>
-            <li>WiFi connectivity for remote monitoring</li>
-            <li>Automatic software updates</li>
-            <li>Weather resistant for outdoor installation</li>
-            <li>18-foot cable length</li>
-            <li>Power sharing between multiple units</li>
+            <li>Electrical panel capacity evaluation</li>
+            <li>Optimal charger location planning</li>
+            <li>Load calculation and circuit design</li>
+            <li>WiFi connectivity assessment</li>
+            <li>Free on-site consultation</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Installation Requirements</h3>
+          <h3>Professional Installation</h3>
           <ul>
-            <li>Dedicated 60A circuit breaker</li>
-            <li>6 AWG copper wiring minimum</li>
-            <li>NEMA 3R rated electrical disconnect</li>
-            <li>Proper grounding and GFCI protection</li>
-            <li>City electrical permit and inspection</li>
-            <li>WiFi network for connectivity</li>
+            <li>Dedicated 240V circuit installation</li>
+            <li>Code-compliant wiring and conduit</li>
+            <li>GFCI and disconnect switch installation</li>
+            <li>Charger mounting and connection</li>
+            <li>System testing and commissioning</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Installation Pricing</h3>
-          <p><strong>Tesla Wall Connector Installation:</strong><br/>
-          Starting at $1,200 (includes permits)</p>
-          <p><strong>NEMA 14-50 Outlet:</strong><br/>
-          Starting at $800 (for portable chargers)</p>
-          <p><strong>Panel Upgrade (if needed):</strong><br/>
-          $1,500 - $3,000 depending on service size</p>
-          <p><em>*Prices vary based on distance from panel and electrical upgrades needed</em></p>
+          <h3>Permits & Inspections</h3>
+          <ul>
+            <li>City of Omaha electrical permits</li>
+            <li>OPPD utility coordination if needed</li>
+            <li>Final electrical inspection scheduling</li>
+            <li>Code compliance certification</li>
+            <li>Installation warranty documentation</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section alt">
-    <div class="container">
+    <section class="charger-types">
+      <h2>EV Chargers We Install</h2>
+      <div class="charger-grid">
+        <div class="charger-card featured">
+          <h3>🚗 Tesla Wall Connector</h3>
+          <div class="specs">
+            <p><strong>Charging Speed:</strong> Up to 44 miles/hour</p>
+            <p><strong>Power:</strong> Up to 48 amps</p>
+            <p><strong>Cable Length:</strong> 18 feet</p>
+            <p><strong>Features:</strong> WiFi, automatic updates, power sharing</p>
+          </div>
+          <p><strong>Best For:</strong> Tesla owners wanting the fastest home charging</p>
+          <p class="price">Starting at $1,200 installed</p>
+        </div>
+
+        <div class="charger-card">
+          <h3>⚡ ChargePoint Home Flex</h3>
+          <div class="specs">
+            <p><strong>Charging Speed:</strong> Up to 37 miles/hour</p>
+            <p><strong>Power:</strong> 16-50 amps (adjustable)</p>
+            <p><strong>Cable Length:</strong> 23 feet</p>
+            <p><strong>Features:</strong> WiFi, smartphone app, scheduling</p>
+          </div>
+          <p><strong>Best For:</strong> Universal compatibility, all EV brands</p>
+          <p class="price">Starting at $1,100 installed</p>
+        </div>
+
+        <div class="charger-card">
+          <h3>🔌 JuiceBox 40</h3>
+          <div class="specs">
+            <p><strong>Charging Speed:</strong> Up to 32 miles/hour</p>
+            <p><strong>Power:</strong> 32 amps</p>
+            <p><strong>Cable Length:</strong> 25 feet</p>
+            <p><strong>Features:</strong> Smart scheduling, load balancing</p>
+          </div>
+          <p><strong>Best For:</strong> Budget-conscious smart charging</p>
+          <p class="price">Starting at $950 installed</p>
+        </div>
+
+        <div class="charger-card">
+          <h3>🏠 NEMA 14-50 Outlet</h3>
+          <div class="specs">
+            <p><strong>Charging Speed:</strong> Up to 30 miles/hour</p>
+            <p><strong>Power:</strong> 40 amps</p>
+            <p><strong>Features:</strong> Works with portable chargers</p>
+            <p><strong>Flexibility:</strong> Use any portable EVSE</p>
+          </div>
+          <p><strong>Best For:</strong> Portable charger compatibility</p>
+          <p class="price">Starting at $800 installed</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="common-problems">
+      <h2>EV Charging Problems We Solve</h2>
+      <div class="problem-grid">
+        <div class="problem-item">
+          <h3>🔋 Slow Charging Speeds</h3>
+          <p>Upgrading from standard 120V outlets to dedicated 240V Level 2 charging reduces charging time from 20+ hours to 4-8 hours for most EVs.</p>
+        </div>
+        <div class="problem-item">
+          <h3>⚡ Insufficient Panel Capacity</h3>
+          <p>Many homes need electrical panel upgrades to handle EV charging loads. We assess and upgrade your electrical service as needed.</p>
+        </div>
+        <div class="problem-item">
+          <h3>🏠 Inconvenient Charging Location</h3>
+          <p>We install chargers in optimal locations - garages, driveways, or carports - with proper weatherproof protection and cable management.</p>
+        </div>
+        <div class="problem-item">
+          <h3>📱 Lack of Smart Features</h3>
+          <p>Modern EV chargers offer WiFi connectivity, smartphone apps, scheduling, and energy monitoring that basic outlets can't provide.</p>
+        </div>
+        <div class="problem-item">
+          <h3>🏢 Commercial Charging Needs</h3>
+          <p>Businesses need reliable, networked charging stations for employees and customers. We install commercial-grade solutions.</p>
+        </div>
+        <div class="problem-item">
+          <h3>🔌 Multiple Vehicle Charging</h3>
+          <p>Households with multiple EVs need power-sharing solutions or multiple charging points to avoid overloading electrical systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="installation-process">
+      <h2>Our EV Charger Installation Process</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Free Consultation & Site Assessment</h3>
+            <p>Our certified EV charger installer visits your home to assess your electrical panel, determine the best charger location, calculate electrical loads, and provide a detailed estimate with no hidden fees.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Permits & Electrical Planning</h3>
+            <p>We handle all permit applications with the City of Omaha, coordinate with OPPD if service upgrades are needed, and create detailed installation plans that meet all electrical codes.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Electrical Infrastructure Installation</h3>
+            <p>Licensed electricians install the dedicated 240V circuit, run appropriate wiring in conduit, install disconnect switches and GFCI protection, and upgrade your panel if necessary.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Charger Installation & Testing</h3>
+            <p>We mount your chosen EV charger, make all electrical connections, configure WiFi and smart features, test the complete system, and schedule the required city inspection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-us">
+      <h2>Why Choose Our EV Charger Installation Service</h2>
+      <div class="grid">
+        <div class="benefit">
+          <h3>🏆 Tesla Certified Installer</h3>
+          <p>Official Tesla Wall Connector certified installer with specialized training in Tesla charging systems and requirements. We know Tesla vehicles inside and out.</p>
+        </div>
+        <div class="benefit">
+          <h3>⚡ Same-Week Installation</h3>
+          <p>Most EV charger installations completed within one week of approval. We maintain inventory of popular chargers for immediate installation.</p>
+        </div>
+        <div class="benefit">
+          <h3>📋 Complete Permit Service</h3>
+          <p>We handle all permits, inspections, and utility coordination. You don't have to deal with bureaucracy - we manage everything for you.</p>
+        </div>
+        <div class="benefit">
+          <h3>🔧 Panel Upgrade Specialists</h3>
+          <p>Many homes need electrical panel upgrades for EV charging. We're experts at upgrading electrical services and integrating EV charging safely.</p>
+        </div>
+        <div class="benefit">
+          <h3>💰 Transparent Pricing</h3>
+          <p>Upfront pricing with no hidden fees. We provide detailed estimates that include all materials, labor, permits, and inspections.</p>
+        </div>
+        <div class="benefit">
+          <h3>🛡️ 5-Year Warranty</h3>
+          <p>All EV charger installations include a comprehensive 5-year warranty on our workmanship and electrical connections.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="commercial-charging">
       <h2>Commercial EV Charging Station Installation</h2>
-      <p>We install commercial EV charging stations for businesses, apartments, and public locations throughout Omaha:</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Level 2 Commercial Chargers</h3>
+      <div class="commercial-grid">
+        <div class="commercial-type">
+          <h3>🏢 Workplace Charging</h3>
           <ul>
-            <li>ChargePoint CT4000 series</li>
-            <li>EVBox BusinessLine</li>
-            <li>Blink IQ 200</li>
-            <li>SemaConnect Series 6</li>
+            <li>Employee charging stations</li>
+            <li>Visitor and customer charging</li>
+            <li>Networked charging management</li>
+            <li>Usage tracking and billing</li>
+            <li>Scalable installation design</li>
           </ul>
         </div>
-        <div class="card">
-          <h3>DC Fast Charging</h3>
+        <div class="commercial-type">
+          <h3>🏨 Hospitality & Retail</h3>
           <ul>
-            <li>ABB Terra AC/DC wallbox</li>
-            <li>Delta DC wallbox</li>
-            <li>Tritium Veefil-PK</li>
-            <li>Custom installations</li>
+            <li>Hotel guest charging</li>
+            <li>Restaurant customer charging</li>
+            <li>Shopping center installations</li>
+            <li>Branded charging networks</li>
+            <li>Revenue generation options</li>
           </ul>
         </div>
-        <div class="card">
-          <h3>Commercial Services</h3>
+        <div class="commercial-type">
+          <h3>🏠 Multi-Family Housing</h3>
           <ul>
-            <li>Electrical infrastructure planning</li>
-            <li>Load calculations and utility coordination</li>
-            <li>Permit acquisition and inspections</li>
-            <li>Ongoing maintenance contracts</li>
+            <li>Apartment complex charging</li>
+            <li>Condo association installations</li>
+            <li>Resident billing systems</li>
+            <li>Load management solutions</li>
+            <li>Future expansion planning</li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container">
+    <section class="service-area">
       <h2>EV Charger Installation Service Areas</h2>
-      <p>Professional electric vehicle charger installation throughout the Omaha metro:</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Omaha Areas</h3>
-          <p>West Omaha, Millard, Benson, Elkhorn, Downtown, Midtown, South Omaha</p>
+      <div class="service-areas">
+        <div class="area-column">
+          <h3>Primary Service Areas</h3>
+          <ul>
+            <li>West Omaha (68118, 68130, 68154)</li>
+            <li>Midtown Omaha (68131, 68132)</li>
+            <li>Downtown Omaha (68102, 68105)</li>
+            <li>South Omaha (68107, 68108)</li>
+            <li>Benson & Florence (68111, 68112)</li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>Sarpy County</h3>
-          <p>Bellevue, Papillion, La Vista, Ralston, Gretna, Springfield</p>
-        </div>
-        <div class="card">
-          <h3>Washington County</h3>
-          <p>Bennington, Boys Town, Valley, Waterloo</p>
+        <div class="area-column">
+          <h3>Extended Service Areas</h3>
+          <ul>
+            <li>Bellevue, NE (68005, 68123)</li>
+            <li>Papillion, NE (68046, 68133)</li>
+            <li>La Vista, NE (68128)</li>
+            <li>Elkhorn, NE (68022)</li>
+            <li>Gretna, NE (68028)</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+      <p><strong>Installation Timeline:</strong> Most residential installations completed within 2-5 business days after permit approval.</p>
+    </section>
 
-  <section class="section alt">
-    <div class="container">
-      <h2>Why Choose Our EV Charger Installation?</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Licensed & Experienced</h3>
-          <p>Master electricians with extensive experience in EV charger installations. We stay current with rapidly evolving EV technology and electrical codes.</p>
+    <section class="faq-section">
+      <h2>EV Charger Installation FAQs</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How much does EV charger installation cost in Omaha?</h3>
+          <p>Installation costs range from $800 for a basic NEMA 14-50 outlet to $1,500+ for smart Level 2 chargers, depending on your electrical panel capacity, distance from panel, and any required upgrades. We provide free estimates.</p>
         </div>
-        <div class="card">
-          <h3>Complete Service</h3>
-          <p>From initial consultation to final inspection, we handle every aspect of your EV charger installation including permits, electrical upgrades, and testing.</p>
+        <div class="faq-item">
+          <h3>Do I need to upgrade my electrical panel for EV charging?</h3>
+          <p>Many homes built before 2000 may need panel upgrades to safely handle EV charging loads. We assess your current electrical capacity and recommend upgrades only when necessary for safety and performance.</p>
         </div>
-        <div class="card">
-          <h3>Quality Guarantee</h3>
-          <p>All installations backed by our workmanship warranty. We use only UL-listed components and follow manufacturer specifications exactly.</p>
+        <div class="faq-item">
+          <h3>How long does EV charger installation take?</h3>
+          <p>Most residential installations take 4-6 hours on installation day. The complete process from consultation to final inspection typically takes 1-2 weeks, depending on permit processing and any required electrical upgrades.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's the difference between Level 1 and Level 2 charging?</h3>
+          <p>Level 1 uses standard 120V outlets (3-5 miles/hour charging). Level 2 uses 240V circuits (10-60 miles/hour charging). Level 2 is essential for practical daily EV use and what we specialize in installing.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I install an EV charger outdoors?</h3>
+          <p>Yes, most EV chargers are designed for outdoor installation. We use weatherproof enclosures, proper conduit sealing, and GFCI protection to ensure safe outdoor operation in Nebraska weather conditions.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you install chargers for all EV brands?</h3>
+          <p>Yes, we install chargers compatible with all electric vehicles including Tesla, Ford, GM, Nissan, BMW, Audi, and others. We help you choose the right charger for your specific vehicle and charging needs.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-card">
+        <h2>Ready to Install Your EV Charger?</h2>
+        <p>Join thousands of Omaha EV owners who charge at home with professional installations. Get your free estimate today and start enjoying convenient, fast home charging.</p>
+        <div class="cta-buttons">
+          <a href="/contact" class="btn-primary">Schedule Free Estimate</a>
+          <a href="tel:+1-402-555-1234" class="btn-secondary">Call (402) 555-1234</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- EV Charger Service Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "EV Charger Installation Omaha",
+    "description": "Professional electric vehicle charger installation services in Omaha, NE including Tesla Wall Connectors and Level 2 charging stations",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Omaha Electrician",
+      "telephone": "+1-402-555-1234",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Omaha",
+        "addressRegion": "NE",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Omaha", "addressRegion": "NE"},
+      {"@type": "City", "name": "Bellevue", "addressRegion": "NE"},
+      {"@type": "City", "name": "Papillion", "addressRegion": "NE"},
+      {"@type": "City", "name": "La Vista", "addressRegion": "NE"}
+    ],
+    "serviceType": "EV Charger Installation",
+    "offers": {
+      "@type": "Offer",
+      "priceRange": "$800-$1500",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does EV charger installation cost in Omaha?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Installation costs range from $800 for a basic NEMA 14-50 outlet to $1,500+ for smart Level 2 chargers, depending on your electrical panel capacity and any required upgrades."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to upgrade my electrical panel for EV charging?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many homes built before 2000 may need panel upgrades to safely handle EV charging loads. We assess your current electrical capacity and recommend upgrades only when necessary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does EV charger installation take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most residential installations take 4-6 hours on installation day. The complete process typically takes 1-2 weeks including permits and inspections."
+        }
+      }
+    ]
+  }
+  </script>
 </BaseLayout>
+
+<style>
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  .trust-indicators {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+
+  .cta-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .what-included, .charger-types, .common-problems, .installation-process, .why-choose-us, .commercial-charging, .service-area, .faq-section {
+    margin: 4rem 0;
+  }
+
+  .charger-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .charger-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+  }
+
+  .charger-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+
+  .charger-card.featured {
+    border: 2px solid var(--brand);
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  }
+
+  .specs {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+
+  .specs p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-weight: bold;
+    color: var(--brand);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .problem-item {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .step-number {
+    background: var(--brand);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+
+  .benefit {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .commercial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .commercial-type {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .service-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .area-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .area-column li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .faq-item {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .faq-item h3 {
+    color: var(--brand);
+    margin-bottom: 1rem;
+  }
+
+  .cta-section {
+    margin: 4rem 0;
+  }
+
+  .cta-card {
+    background: var(--card);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--border);
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .trust-indicators {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .cta-group, .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .charger-grid, .problem-grid, .faq-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .step {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
