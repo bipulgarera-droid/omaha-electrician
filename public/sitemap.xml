@@ -3,9 +3,16 @@
   <url><loc>https://omaha-electrician.vercel.app/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://omaha-electrician.vercel.app/services</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://omaha-electrician.vercel.app/emergency-electrician</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://omaha-electrician.vercel.app/commercial-electrician-omaha</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://omaha-electrician.vercel.app/ev-charger-installation</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://omaha-electrician.vercel.app/locations</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://omaha-electrician.vercel.app/electrician-west-omaha</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://omaha-electrician.vercel.app/electrician-bellevue-ne</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://omaha-electrician.vercel.app/electrician-papillion-ne</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://omaha-electrician.vercel.app/electrician-la-vista-ne</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://omaha-electrician.vercel.app/electrical-faq</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://omaha-electrician.vercel.app/circuit-breaker-keeps-tripping-omaha</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://omaha-electrician.vercel.app/electrical-outlet-not-working-omaha</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://omaha-electrician.vercel.app/about</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://omaha-electrician.vercel.app/contact</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>
