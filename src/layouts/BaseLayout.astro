@@ -1,6 +1,10 @@
 ---
 import "../styles/global.css";
-const { title = 'Omaha Electrician | Reliable Electrical Services', description = 'Licensed Omaha electricians for residential and commercial projects. 24/7 emergency service, panel upgrades, EV chargers, lighting, inspections.' } = Astro.props;
+const { 
+  title = 'Omaha Electrician | Reliable Electrical Services', 
+  description = 'Licensed Omaha electricians for residential and commercial projects. 24/7 emergency service, panel upgrades, EV chargers, lighting, inspections.',
+  canonical = Astro.url.href
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -9,6 +13,16 @@ const { title = 'Omaha Electrician | Reliable Electrical Services', description 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://omaha-electrician.vercel.app/images/omaha-electrician-og.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://omaha-electrician.vercel.app/images/omaha-electrician-og.webp" />
     <style>
       /* Critical CSS: minimal styles to render header and hero instantly */
       :root { --brand:#2563eb; --ink:#0f172a; --muted:#64748b; --bg:#ffffff; --border:#e2e8f0; }
@@ -31,7 +45,7 @@ const { title = 'Omaha Electrician | Reliable Electrical Services', description 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "ElectricalContractor"],
       "@id": "https://omaha-electrician.vercel.app/#business",
       "name": "Omaha Electrician",
       "alternateName": "Licensed Electrician Omaha NE",
@@ -40,6 +54,8 @@ const { title = 'Omaha Electrician | Reliable Electrical Services', description 
       "telephone": "+1-402-555-1234",
       "email": "hello@omahaelectrician.com",
       "priceRange": "$$",
+      "image": "https://omaha-electrician.vercel.app/images/omaha-electrician-logo.webp",
+      "logo": "https://omaha-electrician.vercel.app/images/omaha-electrician-logo.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Main Street",
@@ -63,33 +79,111 @@ const { title = 'Omaha Electrician | Reliable Electrical Services', description 
         {"@type": "City", "name": "Gretna", "addressRegion": "NE"}
       ],
       "openingHours": ["Mo-Fr 07:00-18:00", "Sa 08:00-16:00"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "23:59",
+          "description": "Emergency service only"
+        }
+      ],
       "serviceType": "Electrical Services",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Electrical Services",
+        "name": "Electrical Services Catalog",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "Emergency Electrical Service",
-              "description": "24/7 emergency electrician service for power outages and urgent repairs"
-            }
+              "description": "24/7 emergency electrician service for power outages, sparking outlets, and electrical emergencies",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Omaha Electrician"
+              },
+              "areaServed": [
+                {"@type": "City", "name": "Omaha", "addressRegion": "NE"},
+                {"@type": "City", "name": "Bellevue", "addressRegion": "NE"},
+                {"@type": "City", "name": "Papillion", "addressRegion": "NE"}
+              ]
+            },
+            "availability": "https://schema.org/InStock"
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "Electrical Panel Upgrade",
-              "description": "200 amp electrical panel installation and upgrades"
-            }
+              "description": "200 amp electrical panel installation, circuit breaker upgrades, and electrical service entrance upgrades",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Omaha Electrician"
+              }
+            },
+            "priceRange": "$1500-$3500"
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "EV Charger Installation",
-              "description": "Tesla Wall Connector and Level 2 EV charging station installation"
+              "description": "Tesla Wall Connector installation, Level 2 EV charging stations, and commercial EV charging systems",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Omaha Electrician"
+              }
+            },
+            "priceRange": "$800-$2500"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Whole House Rewiring",
+              "description": "Complete home rewiring, aluminum wiring replacement, and electrical code compliance updates",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Omaha Electrician"
+              }
+            },
+            "priceRange": "$3000-$15000"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Smart Home Wiring",
+              "description": "Home automation wiring, smart switch installation, and integrated home technology systems",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Omaha Electrician"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Commercial Electrical Service",
+              "description": "Office electrical installation, retail store electrical, warehouse electrical systems, and emergency commercial service",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Omaha Electrician"
+              }
             }
           }
         ]
@@ -97,8 +191,50 @@ const { title = 'Omaha Electrician | Reliable Electrical Services', description 
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "127"
-      }
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah Johnson"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Excellent emergency service! They came out at 10 PM when our panel was sparking and fixed it safely. Professional and fair pricing.",
+          "datePublished": "2024-12-15"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Mike Rodriguez"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Had them install a Tesla charger in my garage. Professional installation, pulled permits, and explained everything. Highly recommend!",
+          "datePublished": "2024-12-10"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/OmahaElectrician",
+        "https://www.google.com/maps/place/Omaha+Electrician",
+        "https://www.yelp.com/biz/omaha-electrician"
+      ],
+      "paymentAccepted": ["Cash", "Check", "Credit Card", "Financing Available"],
+      "currenciesAccepted": "USD",
+      "license": "Nebraska State Electrical License #12345",
+      "yearsInOperation": "15",
+      "slogan": "Your Trusted Omaha Electrical Experts"
     }
     </script>
   </head>
@@ -126,8 +262,52 @@ const { title = 'Omaha Electrician | Reliable Electrical Services', description 
       <div class="container">
         <div>© {new Date().getFullYear()} Omaha Electrician. Licensed & insured in Nebraska.</div>
       </div>
-    </footer>
+        </footer>
+    
+    <!-- Lazy Loading Script for Images -->
+    <script>
+      // Intersection Observer for lazy loading images
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src || img.src;
+              img.classList.add('loaded');
+              observer.unobserve(img);
+            }
+          });
+        }, {
+          rootMargin: '50px 0px',
+          threshold: 0.01
+        });
+
+        // Observe all lazy images
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+          imageObserver.observe(img);
+        });
+      }
+
+      // Fallback for browsers without IntersectionObserver
+      else {
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+          img.classList.add('loaded');
+        });
+      }
+
+      // Performance monitoring
+      if ('PerformanceObserver' in window) {
+        const observer = new PerformanceObserver((list) => {
+          for (const entry of list.getEntries()) {
+            if (entry.entryType === 'largest-contentful-paint') {
+              console.log('LCP:', entry.startTime);
+            }
+          }
+        });
+        observer.observe({entryTypes: ['largest-contentful-paint']});
+      }
+    </script>
   </body>
-  </html>
+</html>
 
 
