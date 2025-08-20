@@ -40,6 +40,11 @@ a:hover { color: var(--brand-700); }
 .container { max-width: 1150px; margin: 0 auto; padding: 0 22px; }
 main { padding: 40px 0 80px; }
 
+/* Ensure main container has proper spacing on mobile */
+main .container {
+  padding: 0 22px;
+}
+
 /* Sticky Phone Bar */
 .sticky-phone-bar {
   position: sticky;
@@ -69,16 +74,16 @@ main { padding: 40px 0 80px; }
 }
 
 .sticky-phone-btn {
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff;
   color: var(--brand-700);
-  padding: 8px 14px;
+  padding: 10px 16px;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  border: 2px solid rgba(255, 255, 255, 0.9);
 }
 
 .sticky-phone-btn:hover {
@@ -403,7 +408,11 @@ button.cta { cursor: pointer; border: 0; }
   
   /* Container spacing fixes */
   .container {
-    padding: 0 16px;
+    padding: 0 20px !important;
+  }
+  
+  main .container {
+    padding: 0 20px !important;
   }
   
   main {
@@ -431,8 +440,12 @@ button.cta { cursor: pointer; border: 0; }
   }
   
   .sticky-phone-btn {
-    font-size: 0.95rem;
-    padding: 8px 12px;
+    font-size: 1rem;
+    padding: 10px 14px;
+    background: #ffffff !important;
+    color: var(--brand-700) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25) !important;
+    border: 2px solid #ffffff !important;
   }
   
   .trust-indicators-header {
@@ -520,7 +533,11 @@ button.cta { cursor: pointer; border: 0; }
 /* Extra mobile styles for very small screens */
 @media (max-width: 480px) {
   .container {
-    padding: 0 12px;
+    padding: 0 16px !important;
+  }
+  
+  main .container {
+    padding: 0 16px !important;
   }
   
   .sticky-phone-bar {
