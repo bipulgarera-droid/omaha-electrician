@@ -130,13 +130,68 @@ header.site-header { position: sticky; top: 40px; background: rgba(255,255,255,0
 .navlinks a { padding: 8px 10px; border-radius: 8px; font-weight: 500; }
 .navlinks a:hover { background: var(--surface); }
 .mobile-cta { display: none; }
-.mobile-phone-btn { background: var(--brand-600); color: white; padding: 8px 12px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9rem; }
+.mobile-phone-btn { background: var(--brand-600) !important; color: white !important; padding: 8px 12px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.9rem; }
 
 /* Buttons */
-.button, .cta { display: inline-block; background: linear-gradient(135deg, var(--brand-600), var(--brand-700)); color: #fff; padding: 12px 16px; border-radius: 12px; font-weight: 700; box-shadow: var(--shadow-md); transition: transform .15s ease, box-shadow .15s ease; }
-.button:hover, .cta:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); }
-.button.outline { background: transparent; color: var(--brand-700); border: 2px solid var(--brand-200); box-shadow: none; }
-.button.outline:hover { border-color: var(--brand-400); background: var(--brand-50); }
+.button, .cta { display: inline-block; background: linear-gradient(135deg, var(--brand-600), var(--brand-700)); color: #fff !important; padding: 12px 16px; border-radius: 12px; font-weight: 700; box-shadow: var(--shadow-md); transition: transform .15s ease, box-shadow .15s ease; text-decoration: none; }
+.button:hover, .cta:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); color: #fff !important; }
+.button.outline { background: white !important; color: var(--brand-700) !important; border: 2px solid var(--brand-600) !important; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.button.outline:hover { background: var(--brand-50) !important; color: var(--brand-700) !important; border-color: var(--brand-400) !important; }
+
+/* Emergency and Secondary Button Classes */
+.btn-emergency, .btn-emergency-large {
+  background: #dc2626 !important;
+  color: white !important;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  border: 2px solid #dc2626;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-emergency:hover, .btn-emergency-large:hover {
+  background: #b91c1c !important;
+  color: white !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn-secondary {
+  background: white !important;
+  color: var(--brand-700) !important;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  border: 2px solid var(--brand-600);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-secondary:hover {
+  background: var(--brand-50) !important;
+  color: var(--brand-700) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Global phone link visibility fix */
+a[href^="tel:"] {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+/* Ensure phone links in specific contexts are visible */
+.footer-content a[href^="tel:"], 
+.contact-info a[href^="tel:"],
+p a[href^="tel:"] {
+  color: var(--brand-700) !important;
+  font-weight: 600;
+}
 
 /* Hero */
 .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; padding: 36px 0; align-items: center; }
@@ -184,20 +239,22 @@ h3 { font-weight: 700; font-size: 18px; }
 }
 
 .emergency-phone {
-  background: white;
-  color: var(--danger);
+  background: white !important;
+  color: #dc2626 !important;
   padding: 8px 16px;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
   font-size: 1.1rem;
   transition: all 0.2s ease;
+  border: 2px solid #dc2626;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .emergency-phone:hover {
-  background: #fef2f2;
+  background: #fef2f2 !important;
   transform: scale(1.05);
-  color: var(--danger);
+  color: #dc2626 !important;
 }
 
 .emergency-response {
