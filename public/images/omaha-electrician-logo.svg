@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <!-- City Skyline -->
+  <path d="M50 200 L100 200 L100 150 L150 150 L150 100 L200 100 L200 50 L250 50 L250 100 L300 100 L300 150 L350 150 L350 200 L400 200 L400 250 L450 250 L450 300 L500 300 L500 250 L550 250 L550 200 L600 200 L600 150 L650 150 L650 100 L700 100 L700 50 L750 50 L750 100 L800 100 L800 150 L850 150 L850 200 L900 200 L900 250 L950 250 L950 300 L1000 300 L1000 250 L1050 250 L1050 200 L1100 200 L1100 150 L1150 150 L1150 300 L50 300 Z" fill="#2563eb" stroke="#1e40af" stroke-width="3"/>
+  
+  <!-- OMAHA Text -->
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="180" font-weight="bold" text-anchor="middle" fill="url(#orangeGradient)">OMAHA</text>
+  
+  <!-- ELECTRIC SERVICE, INC. Text -->
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="48" font-weight="600" text-anchor="middle" fill="#2563eb">ELECTRIC SERVICE, INC.</text>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -107,9 +107,25 @@ main .container {
 /* Header */
 header.site-header { position: sticky; top: 40px; background: rgba(255,255,255,0.95); backdrop-filter: saturate(140%) blur(8px); border-bottom: 1px solid var(--border); z-index: 50; }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 70px; }
-.brand { display: flex; gap: 12px; align-items: flex-start; font-weight: 800; letter-spacing: .2px; flex-direction: column; }
-.brand-tagline { font-size: 0.7rem; color: var(--muted); font-weight: 500; margin-top: -4px; }
-.logo { width: 36px; height: 36px; border-radius: 9px; background: linear-gradient(135deg, var(--brand-500), var(--brand-700)); box-shadow: var(--shadow-sm); }
+.brand { display: flex; gap: 12px; align-items: center; font-weight: 800; letter-spacing: .2px; }
+.logo-image { 
+  height: 50px; 
+  width: auto; 
+  max-width: 220px;
+  object-fit: contain;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.brand-name {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+}
+.brand-tagline { font-size: 0.7rem; color: var(--muted); font-weight: 500; line-height: 1.1; }
 .navlinks { display: flex; gap: 22px; align-items: center; }
 .navlinks a { padding: 8px 10px; border-radius: 8px; font-weight: 500; }
 .navlinks a:hover { background: var(--surface); }
@@ -466,11 +482,25 @@ button.cta { cursor: pointer; border: 0; }
     height: 60px;
   }
   
-  .brand {
+    .brand {
     flex-direction: row;
     align-items: center;
+    gap: 8px;
   }
-  
+
+  .logo-image {
+    height: 35px;
+    max-width: 160px;
+  }
+
+  .brand-text {
+    gap: 1px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+  }
+
   .brand-tagline {
     display: none;
   }
@@ -551,11 +581,20 @@ button.cta { cursor: pointer; border: 0; }
     text-align: center;
   }
   
-  .trust-indicators-header {
+    .trust-indicators-header {
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
+  .logo-image {
+    height: 30px;
+    max-width: 140px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+  }
+
   .hero {
     padding: 16px 0;
   }

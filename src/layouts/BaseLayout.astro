@@ -18,11 +18,11 @@ const {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://omaha-electrician.vercel.app/images/omaha-electrician-og.webp" />
+    <meta property="og:image" content="https://omaha-electrician.vercel.app/images/omaha-electrician-logo.svg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="https://omaha-electrician.vercel.app/images/omaha-electrician-og.webp" />
+    <meta name="twitter:image" content="https://omaha-electrician.vercel.app/images/omaha-electrician-logo.svg" />
     <style>
       /* Critical CSS: minimal styles to render header and hero instantly */
       :root { --brand:#2563eb; --ink:#0f172a; --muted:#64748b; --bg:#ffffff; --border:#e2e8f0; }
@@ -54,8 +54,8 @@ const {
       "telephone": "+1-402-555-1234",
       "email": "hello@omahaelectrician.com",
       "priceRange": "$$",
-      "image": "https://omaha-electrician.vercel.app/images/omaha-electrician-logo.webp",
-      "logo": "https://omaha-electrician.vercel.app/images/omaha-electrician-logo.webp",
+                "image": "https://omaha-electrician.vercel.app/images/omaha-electrician-logo.svg",
+          "logo": "https://omaha-electrician.vercel.app/images/omaha-electrician-logo.svg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Main Street",
@@ -257,9 +257,11 @@ const {
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="/">
-          <span class="logo"></span>
-          <span>Omaha Electrician</span>
-          <span class="brand-tagline">Licensed Since 2009</span>
+          <img src="/images/omaha-electrician-logo.svg" alt="Omaha Electric Service, Inc." class="logo-image" loading="eager" />
+          <div class="brand-text">
+            <span class="brand-name">Omaha Electrician</span>
+            <span class="brand-tagline">Licensed Since 2009</span>
+          </div>
         </a>
         <nav class="navlinks">
           <a href="/services">Services</a>
