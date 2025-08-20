@@ -74,8 +74,8 @@ main .container {
 }
 
 .sticky-phone-btn {
-  background: #ffffff;
-  color: var(--brand-700);
+  background: #ffffff !important;
+  color: #1e40af !important;
   padding: 10px 16px;
   border-radius: 8px;
   font-weight: 700;
@@ -83,14 +83,14 @@ main .container {
   font-size: 1.1rem;
   transition: all 0.2s ease;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  border: 2px solid #e5e7eb;
 }
 
 .sticky-phone-btn:hover {
-  background: white;
+  background: #f8fafc !important;
   transform: scale(1.05);
-  color: var(--brand-700);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  color: #1e40af !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 .trust-indicators-header {
